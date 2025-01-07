@@ -1,1 +1,2 @@
-Generate wallet: pnpm run start generate-credentials
+Generate wallet:
+`pnpm run start generate-credentials`
