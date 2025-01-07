@@ -1,6 +1,7 @@
 import { Command } from 'commander';
 import {greetCommand} from "./greet";
 import {generateCredentialsCommand} from "./generate_credentials";
+import {restoreCredentialsCommand} from "./restore_credentials";
 
 const program = new Command();
 
@@ -12,5 +13,6 @@ program
 // Add commands here
 program.addCommand(greetCommand);
 program.addCommand(generateCredentialsCommand);
+program.addCommand(restoreCredentialsCommand)
 
 program.parse(process.argv);

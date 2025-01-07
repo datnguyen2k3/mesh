@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { generate_credentials } from '../functions/generate_credentials';
+import { generate_credentials } from '../wallet/functions/generate_credentials';
 
 export const generateCredentialsCommand = new Command('generate-credentials')
   .description('Generate a wallet credentials')

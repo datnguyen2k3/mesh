@@ -1,0 +1,21 @@
+services:
+  ogmios:
+    image: cardanosolutions/cardano-node-ogmios:latest  # Dùng image chính thức từ IOHK cho Ogmios
+    container_name: ogmios
+    ports:
+      - "1337:1337"  # Mở cổng 1337 để có thể kết nối
+    environment:
+      - OGMIOS_LOG_LEVEL=info  # Cấu hình log level
+    volumes:
+      - ogmios-data:/var/lib/ogmios
+    networks:
+      - ogmios-network
+    restart: always  # Tự động restart nếu container gặp lỗi
+
+networks:
+  ogmios-network:
+    driver: bridge
+
+volumes:
+  ogmios-data:
+    driver: local

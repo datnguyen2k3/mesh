@@ -6,3 +6,5 @@ export const greetCommand = new Command('greet')
   .action((name: string) => {
     console.log(`Hello, ${name}!`);
   });
+
+"solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution solution"
