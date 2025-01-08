@@ -25,3 +25,11 @@ To get balance of a wallet, use the following command:
 ```bash
 pnpm run start get-balance "<your_address>"
 ```
+
+## Get Utxos Wallet
+
+To get utxos of a wallet, use the following command:
+
+```bash
+pnpm run start get-utxos "<your_address>"
+```

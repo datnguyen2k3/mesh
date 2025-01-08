@@ -14,6 +14,9 @@ importers:
       '@cardano-ogmios/schema':
         specifier: ^6.10.0
         version: 6.10.0
+      '@emurgo/cardano-serialization-lib-nodejs':
+        specifier: ^13.2.0
+        version: 13.2.0
       '@meshsdk/core':
         specifier: ^1.8.8
         version: 1.8.8(@babel/core@7.26.0)(@bufbuild/protobuf@1.10.0)(bufferutil@4.0.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rxjs@7.8.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.2)))(utf-8-validate@6.0.5)
@@ -309,6 +312,9 @@ packages:
 
   '@emurgo/cardano-message-signing-nodejs@1.1.0':
     resolution: {integrity: sha512-PQRc8K8wZshEdmQenNUzVtiI8oJNF/1uAnBhidee5C4o1l2mDLOW+ur46HWHIFKQ6x8mSJTllcjMscHgzju0gQ==}
+
+  '@emurgo/cardano-serialization-lib-nodejs@13.2.0':
+    resolution: {integrity: sha512-Bz1zLGEqBQ0BVkqt1OgMxdBOE3BdUWUd7Ly9Ecr/aUwkA8AV1w1XzBMe4xblmJHnB1XXNlPH4SraXCvO+q0Mig==}
 
   '@esbuild/aix-ppc64@0.23.1':
     resolution: {integrity: sha512-6VhYk1diRqrhBAqpJEdjASR/+WVRtfjpqKuNw11cLiaWpAT/Uu+nokB+UJnevzy/P9C/ty6AOe0dwueMrGh/iQ==}
@@ -3294,6 +3300,8 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.9
 
   '@emurgo/cardano-message-signing-nodejs@1.1.0': {}
+
+  '@emurgo/cardano-serialization-lib-nodejs@13.2.0': {}
 
   '@esbuild/aix-ppc64@0.23.1':
     optional: true
