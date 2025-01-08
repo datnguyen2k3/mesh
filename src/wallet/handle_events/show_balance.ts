@@ -4,5 +4,5 @@ export function show_balance(data: any) {
     const utxos = data.result;
     const balance = get_balance(utxos);
 
-    console.log(`Your Balance: ${balance}`);
+    console.log(`Your Balance is ${balance} lovelace`);
 }
