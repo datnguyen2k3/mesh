@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@cardano-ogmios/client':
+        specifier: ^6.10.0
+        version: 6.10.0(bufferutil@4.0.9)(utf-8-validate@6.0.5)
+      '@cardano-ogmios/schema':
+        specifier: ^6.10.0
+        version: 6.10.0
       '@meshsdk/core':
         specifier: ^1.8.8
         version: 1.8.8(@babel/core@7.26.0)(@bufbuild/protobuf@1.10.0)(bufferutil@4.0.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rxjs@7.8.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.2)))(utf-8-validate@6.0.5)
@@ -29,6 +35,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.2))
+      ws:
+        specifier: ^8.18.0
+        version: 8.18.0(bufferutil@4.0.9)(utf-8-validate@6.0.5)
     devDependencies:
       '@types/node':
         specifier: ^22.10.5
@@ -141,6 +150,10 @@ packages:
   '@bufbuild/protobuf@1.10.0':
     resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
 
+  '@cardano-ogmios/client@6.10.0':
+    resolution: {integrity: sha512-nCDXpsRw6+OAanvlCsaegrKrp42ncaY+ee+y+h36z2lcvWRIt8TSaUrnGEzmz9GKTj2UoVpwQgivHT8PRHSWPQ==}
+    engines: {node: '>=14'}
+
   '@cardano-ogmios/client@6.3.0':
     resolution: {integrity: sha512-nWaZ76n/R+p8nxBfRCetOuoDH8o5QToL5zWhRUu9EwHDJqM/0rzvYEk9JYCikAcVlC1qt6+3CcG4nCpG0dsptw==}
     engines: {node: '>=14'}
@@ -151,6 +164,10 @@ packages:
 
   '@cardano-ogmios/client@6.9.0':
     resolution: {integrity: sha512-IsoUVsaMXiYyhWrdVKYOA5PDlX0EZ2gaq4lfk4JelRw6mcWVxemUrMaU2ndvugO9LQ3SCM1nESPgMIU0xe5FWw==}
+    engines: {node: '>=14'}
+
+  '@cardano-ogmios/schema@6.10.0':
+    resolution: {integrity: sha512-1/1KK/uGP2HIMI34eMOrNGuCMVmaFSiBiBnYVDjsASWzgzLOwd0mFkDwIPBilXep2ZuQ+ovtKLeqeMmNFfjfSQ==}
     engines: {node: '>=14'}
 
   '@cardano-ogmios/schema@6.3.0':
@@ -2905,6 +2922,23 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
+  '@cardano-ogmios/client@6.10.0(bufferutil@4.0.9)(utf-8-validate@6.0.5)':
+    dependencies:
+      '@cardano-ogmios/schema': 6.10.0
+      '@cardanosolutions/json-bigint': 1.0.1
+      '@types/json-bigint': 1.0.4
+      bech32: 2.0.0
+      cross-fetch: 3.2.0
+      fastq: 1.18.0
+      isomorphic-ws: 4.0.1(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@6.0.5))
+      nanoid: 3.3.8
+      ts-custom-error: 3.3.1
+      ws: 7.5.10(bufferutil@4.0.9)(utf-8-validate@6.0.5)
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - utf-8-validate
+
   '@cardano-ogmios/client@6.3.0(bufferutil@4.0.9)(utf-8-validate@6.0.5)':
     dependencies:
       '@cardano-ogmios/schema': 6.3.0
@@ -2955,6 +2989,8 @@ snapshots:
       - bufferutil
       - encoding
       - utf-8-validate
+
+  '@cardano-ogmios/schema@6.10.0': {}
 
   '@cardano-ogmios/schema@6.3.0': {}
 

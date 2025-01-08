@@ -2,6 +2,7 @@ import { Command } from 'commander';
 import {greetCommand} from "./greet";
 import {generateCredentialsCommand} from "./generate_credentials";
 import {restoreCredentialsCommand} from "./restore_credentials";
+import {getBalanceCommand} from "./get_balance";
 
 const program = new Command();
 
@@ -13,6 +14,7 @@ program
 // Add commands here
 program.addCommand(greetCommand);
 program.addCommand(generateCredentialsCommand);
-program.addCommand(restoreCredentialsCommand)
+program.addCommand(restoreCredentialsCommand);
+program.addCommand(getBalanceCommand);
 
 program.parse(process.argv);
